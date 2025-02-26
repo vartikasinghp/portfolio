@@ -1,32 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vartika Singh- Portfolio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Portfolio</title>
 </head>
-<body style="font-family: 'Times New Roman', Times, serif; text-align: center; background-color: #f4f4f4;">
-    <header style="background: #333; color: white; padding: 15px; font-size: 24px;border-radius: 10px">
-        <h1>Vartika Singh- Portfolio</h1>
-    </header>
-    
-    <nav style="margin: 20px;">
-        <a href="about.html" style="text-decoration: none; margin: 10px; color: #333; font-size: 20px;">About Me</a>
-        <a href="projects.html" style="text-decoration: none; margin: 10px; color: #333; font-size: 20px;">Projects</a>
-        <a href="achievements.html" style="text-decoration: none; margin: 10px; color: #333; font-size: 20px;">Achievements</a>
-        <a href="contact.html" style="text-decoration: none; margin: 10px; color: #333; font-size: 20px;">Contact</a>
-    </nav>
-    
-    <section style="padding: 20px; background: white; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); border-radius: 10px;">
-        <img src="/VIT logo.png" alt="VIT LOGO" height="100">
-        <h2>Namaste!</h2>
-        <p>I'm a B.Tech CSE student at Vellore Institute of Technology, passionate about creating Human Centric Websites, Blockchain, and Problem Solving.</p>
-        <p><b>Recent Update:</b> Selected for a fully funded Data Science internship under STPI & Sabudh Foundation.</p>
-        <p>Ranked <b>AIR 61</b> in Code Combat 3.0, 5-star on HackerRank, 2-star on CodeChef, 1435 rating on LeetCode.</p>
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="left">
+      <a href="/">Vartika Singh</a>
+    </div>
+
+    <div class="right">
+      <a href="https://github.com/prafullfarswal" target="_blank" >
+        <i class="fa-brands fa-github"></i>
+        <span>Github</span>
+      </a>
+      
+      <a href="https://www.linkedin.com/in/prafullfarswal/" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin"></i>
+        <span>Linkedin</span>
+      </a>
+      
+      <a href="mailto:prafullfarswal2022@vitbhopal.ac.in">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Email</span>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- SECTION 1: Hero -->
+    <section class="hero-section">
+      <div class="text">
+        <h2>Hi, I'm Vartika 👋</h2>
+        <p>I am a dedicated B.Tech CSE student at Vellore Institute of Technology with a strong passion for Web Development and currently exploring Blockchain. My achievements include a fully funded internship under STPI and Sabudh Foundation, a rank of 61 in Code Combat 3.0, and participation in open source projects and hackathons like Flipkart Grid 5.0. I also have a strong foundation in programming with a 108+ day streak on LeetCode.</p>
+
+        <div class="links">
+          <a href="#skills">
+            <i class="fa-solid fa-code"></i>
+            <span>Skills</span>
+          </a>
+          
+          <a href="#contact">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Contact</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="headshot">
+        <img src="images/vartika_profile.png" alt="Vartika's headshot">
+      </div>
     </section>
-    
-    <footer style="margin-top: 20px; padding: 10px; background: #333; color: white;border-radius: 10px">
-        <p>&copy; 2025 Vartika Singh | All Rights Reserved</p>
-    </footer>
+
+    <!-- SECTION 2: Skills -->
+    <section id="skills" class="skills-section">
+      <h2>Skills</h2>
+
+      <div class="cells">
+        <div class="cell">
+          <img src="images/html-logo.webp" alt="html logo">
+          <span>HTML</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/css-logo.webp" alt="css logo">
+          <span>CSS</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/javascript-logo.webp" alt="javascript logo">
+          <span>JavaScript</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/node-logo.webp" alt="node logo">
+          <span>Node.js</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/react-logo.webp" alt="react logo">
+          <span>React.js</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: Contact -->
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+
+      <div class="group">
+        <div class="text">
+          Feel free to reach out for collaborations, projects, or discussions about Blockchain, Data Structures, Programming and AR/VR.
+        </div>
+
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name">
+
+          <label for="email">Email</label>
+          <input type="email" id="email">
+
+          <label for="message">Message</label>
+          <textarea id="message" cols="30" rows="10"></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
